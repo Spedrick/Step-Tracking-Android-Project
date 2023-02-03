@@ -1,10 +1,11 @@
-package com.example.steptracking
+package com.example.steptracking.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
+import com.example.steptracking.R
 import com.example.steptracking.db.RunDAO
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
