@@ -3,7 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2385" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/drawable/home_back.xml" value="0.2385" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2385" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/drawable/ic_mail.xml" value="0.2385" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/drawable/layout_bg.xml" value="0.2385" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/drawable/rounded_button.xml" value="0.2385" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/font/poppins.xml" value="0.26145833333333335" />
         <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/layout/fragment_run.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/layout/fragment_settings.xml" value="0.23125" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/layout/fragment_setup.xml" value="0.23125" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/layout/fragments_run.xml" value="0.23125" />
+        <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Section 8 - Recycler View/StepTracking/app/src/main/res/layout/welcome_screen.xml" value="0.23125" />
         <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Winter Project Jan 2023/StepTracking/app/src/main/res/drawable/home_back.xml" value="0.2265" />
         <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Winter Project Jan 2023/StepTracking/app/src/main/res/drawable/rounded_button.xml" value="0.2265" />
         <entry key="..\:/Users/Spedrik Webster/Desktop/Android Development Udemy/Winter Project Jan 2023/StepTracking/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
