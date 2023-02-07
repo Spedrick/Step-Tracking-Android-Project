@@ -97,14 +97,14 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signUpBtn"
         android:layout_width="wrap_content"
-        android:ems="14"
+        android:ems="12"
         android:foreground="?android:attr/selectableItemBackground"
         android:layout_height="wrap_content"
         android:layout_marginBottom="150dp"
         android:background="@drawable/rounded_button"
         android:text="@string/sign_up"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

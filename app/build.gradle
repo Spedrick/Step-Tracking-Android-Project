@@ -32,6 +32,13 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+    sourceSets {
+        main {
+            resources {
+                srcDirs 'src\\main\\resources'
+            }
+        }
+    }
 }
 
 dependencies {

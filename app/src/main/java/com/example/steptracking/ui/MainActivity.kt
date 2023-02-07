@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("runDao", "RUNDAO: ${runDAO.hashCode()}")
         val button : Button = findViewById(R.id.button)
+
         button.setOnClickListener {
             Toast.makeText(this,"Clicked",Toast.LENGTH_LONG).show()
         }
