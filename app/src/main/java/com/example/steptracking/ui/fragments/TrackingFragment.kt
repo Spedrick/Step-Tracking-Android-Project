@@ -1,4 +1,7 @@
 package com.example.steptracking.ui.fragments
 
-class TrackingFragment {
+import androidx.fragment.app.Fragment
+import com.example.steptracking.R
+
+class TrackingFragment : Fragment(R.layout.fragment_tracking){
 }
