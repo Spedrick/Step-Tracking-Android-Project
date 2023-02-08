@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Log.d("runDao", "RUNDAO: ${runDAO.hashCode()}")
-        val button : Button = findViewById(R.id.button)
-
-        button.setOnClickListener {
-            Toast.makeText(this,"Clicked",Toast.LENGTH_LONG).show()
-        }
+//        val button : Button = findViewById(R.id.button)
+//
+//        button.setOnClickListener {
+//            Toast.makeText(this,"Clicked",Toast.LENGTH_LONG).show()
+//        }
     }
 }
