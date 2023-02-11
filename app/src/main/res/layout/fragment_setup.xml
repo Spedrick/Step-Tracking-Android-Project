@@ -29,7 +29,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etName"
-            android:layout_width="match_parent"
+            android:layout_width="244dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Your Name"
@@ -47,10 +47,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etWeight"
-            android:layout_width="wrap_content"
+            android:layout_width="247dp"
             android:layout_height="wrap_content"
-            android:hint="Your Weight"
             android:ems="10"
+            android:hint="Your Weight"
             android:inputType="numberDecimal" />
 
     </com.google.android.material.textfield.TextInputLayout>
