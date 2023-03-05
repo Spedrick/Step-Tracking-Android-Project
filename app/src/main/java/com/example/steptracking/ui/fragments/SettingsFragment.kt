@@ -21,7 +21,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        LoadFieldsFromSharedPref()
+        loadFieldsFromSharedPref()
         btnApplyChanges.setOnClickListener {
             val success = applyChangesToSharedPref()
             if(success) {
@@ -32,7 +32,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings){
         }
     }
 
-    private fun LoadFieldsFromSharedPref() {
+    private fun loadFieldsFromSharedPref() {
         val name = sharedPreferences.getString(KEY_NAME, "")
         val weight = sharedPreferences.getFloat(KEY_WEIGHT, 80f)
         etName.setText(name)
