@@ -30,7 +30,9 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_tracking.*
 import java.util.*
 import javax.inject.Inject
-import kotlin.math.round
+import kotlin.math.*
+
+const val CANCEL_TACKING_DIALOG_TAG = "CancelDialog"
 
 @AndroidEntryPoint
 class TrackingFragment : Fragment(R.layout.fragment_tracking){
@@ -63,6 +65,14 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking){
 
         btnToggleRun.setOnClickListener {
             toggleRun()
+        }
+
+        if(savedInstanceState != null) {
+            val cancelTrackingDialog = parentFragmentManager.findFragmentByTag(
+                CANCEL_TACKING_DIALOG_TAG) as CancelTrackingDialog?
+            cancelTrackingDialog?.setYesListener {
+                stopRun()
+            }
         }
 
         btnFinishRun.setOnClickListener {
@@ -132,7 +142,7 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking){
             setYesListener {
                 stopRun()
             }
-        }.show(parentFragmentManager, null)
+        }.show(parentFragmentManager, CANCEL_TACKING_DIALOG_TAG)
     }
 
     private fun stopRun() {
