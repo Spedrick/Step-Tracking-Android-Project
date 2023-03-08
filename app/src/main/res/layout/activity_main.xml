@@ -24,7 +24,7 @@
                 android:id="@+id/tvToolbarTitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Running App"
+                android:text="Run Tracker"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical"

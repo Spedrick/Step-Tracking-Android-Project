@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RunningApp</string>
+    <string name="app_name">Run Tracker</string>
     <string-array name="filter_options">
         <item>Date</item>
         <item>Running Time</item>
