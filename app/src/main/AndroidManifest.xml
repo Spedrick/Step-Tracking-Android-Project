@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/login_logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Theme.TBC_Final"
         tools:targetApi="31">
         <activity
             android:name=".ui.MainActivity"

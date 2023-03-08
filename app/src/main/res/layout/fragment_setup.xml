@@ -74,6 +74,8 @@
         android:hint="Weight (KG)"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="@+id/tilName"
         app:layout_constraintStart_toStartOf="@+id/tilName"

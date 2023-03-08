@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+<!--    Default Theme   -->
     <color name="md_blue_50">#E3F2FD</color>
     <color name="md_blue_100">#BBDEFB</color>
     <color name="md_blue_200">#90CAF9</color>
@@ -16,6 +18,8 @@
     <color name="colorAccent">#FFE600</color>
     <color name="errorColor">#D50000</color>
 
+
+<!--    for TBC Theme   -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
