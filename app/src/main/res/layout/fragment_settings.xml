@@ -7,6 +7,15 @@
     tools:context=".ui.fragments.SettingsFragment"
     android:background="@drawable/gradient">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/signUpImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/login_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvWelcome"
@@ -29,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="30dp"
         android:hint="Name"
         app:boxStrokeWidth="0dp"
@@ -89,7 +98,7 @@
         android:id="@+id/btnApplyChanges"
         android:layout_width="207dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="104dp"
         android:background="@drawable/rounded_btn"
         android:ems="14"
         android:foreground="?android:attr/selectableItemBackground"
