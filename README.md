@@ -33,10 +33,11 @@ Preview :
 
 ## Authors
 
-    * https://https://github.com/Spedrick[Yuvraj Kumar]
+   * [Yuvraj Kumar](https://https://github.com/Spedrick)
+   * [Jogesh Soni](https://https://github.com/sonijogesh)
 
 
 ## Mentor
-    * Anmol Srivastav
+   * Anmol Srivastav
 
 
