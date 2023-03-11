@@ -1,1 +1,1 @@
-# Step-Tracking-Android-Project
+# Run Tracker - An Architectural Pattern Based Android Project
