@@ -2,9 +2,13 @@ package com.example.steptracking.ui.fragments
 
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.steptracking.R
+import com.example.steptracking.databinding.FragmentSettingsBinding
 import com.example.steptracking.other.Constants.KEY_NAME
 import com.example.steptracking.other.Constants.KEY_WEIGHT
 import com.google.android.material.snackbar.Snackbar
@@ -15,14 +19,21 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class SettingsFragment : Fragment(R.layout.fragment_settings){
-
+    private lateinit var binding : FragmentSettingsBinding
     @Inject
     lateinit var sharedPreferences: SharedPreferences
-
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_settings,container,false)
+        return binding.root
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loadFieldsFromSharedPref()
-        btnApplyChanges.setOnClickListener {
+        binding.btnApplyChanges.setOnClickListener {
             val success = applyChangesToSharedPref()
             if(success) {
                 Snackbar.make(view, "Saved changes", Snackbar.LENGTH_LONG).show()
@@ -35,13 +46,13 @@ class SettingsFragment : Fragment(R.layout.fragment_settings){
     private fun loadFieldsFromSharedPref() {
         val name = sharedPreferences.getString(KEY_NAME, "")
         val weight = sharedPreferences.getFloat(KEY_WEIGHT, 80f)
-        etName.setText(name)
-        etWeight.setText(weight.toString())
+        binding.etName.setText(name)
+        binding.etWeight.setText(weight.toString())
     }
 
     private fun applyChangesToSharedPref() : Boolean {
-        val nameText = etName.text.toString()
-        val weightText = etWeight.text.toString()
+        val nameText = binding.etName.text.toString()
+        val weightText = binding.etWeight.text.toString()
         if(nameText.isEmpty() || weightText.isEmpty()) {
             return false
         }

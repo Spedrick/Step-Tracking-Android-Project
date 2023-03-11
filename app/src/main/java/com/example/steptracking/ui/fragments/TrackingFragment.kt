@@ -4,11 +4,13 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.steptracking.R
+import com.example.steptracking.databinding.FragmentTrackingBinding
 import com.example.steptracking.db.Run
 import com.example.steptracking.other.Constants.ACTION_PAUSE_SERVICE
 import com.example.steptracking.other.Constants.ACTION_START_OR_RESUME_SERVICE
@@ -36,7 +38,7 @@ const val CANCEL_TACKING_DIALOG_TAG = "CancelDialog"
 
 @AndroidEntryPoint
 class TrackingFragment : Fragment(R.layout.fragment_tracking){
-
+    private lateinit var binding : FragmentTrackingBinding
     private val viewModel: MainViewModel by viewModels()
 
     private var isTracking = false
@@ -55,15 +57,16 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_tracking,container,false)
         setHasOptionsMenu(true)
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        mapView.onCreate(savedInstanceState)
+        binding.mapView.onCreate(savedInstanceState)
 
-        btnToggleRun.setOnClickListener {
+        binding.btnToggleRun.setOnClickListener {
             toggleRun()
         }
 
@@ -75,12 +78,12 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking){
             }
         }
 
-        btnFinishRun.setOnClickListener {
+        binding.btnFinishRun.setOnClickListener {
             zoomToSeeWholeTrack()
             endRunAndSaveToDb()
         }
 
-        mapView.getMapAsync {
+        binding.mapView.getMapAsync {
             map = it
             addAllPolylines()
         }
@@ -102,7 +105,7 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking){
         TrackingService.timeRunInMillis.observe(viewLifecycleOwner,Observer {
             curTimeInMillis = it
             val formattedTime = TrackingUtility.getFormattedStopWatchTime(curTimeInMillis, true)
-            tvTimer.text = formattedTime
+            binding.tvTimer.text = formattedTime
         })
     }
 
@@ -146,7 +149,7 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking){
     }
 
     private fun stopRun() {
-        tvTimer.text = "00:00:00:00"
+        binding.tvTimer.text = "00:00:00:00"
         sendCommandToService(ACTION_STOP_SERVICE)
         findNavController().navigate(R.id.action_trackingFragment_to_runFragment)
     }
@@ -154,12 +157,12 @@ class TrackingFragment : Fragment(R.layout.fragment_tracking){
     private fun updateTracking(isTracking: Boolean) {
         this.isTracking = isTracking
         if(!isTracking && curTimeInMillis > 0L) {
-            btnToggleRun.text = "Start"
-            btnFinishRun.visibility = View.VISIBLE
+            binding.btnToggleRun.text = "Start"
+            binding.btnFinishRun.visibility = View.VISIBLE
         } else if(isTracking) {
-            btnToggleRun.text = "Stop"
+            binding.btnToggleRun.text = "Stop"
             menu?.getItem(0)?.isVisible = true
-            btnFinishRun.visibility = View.GONE
+            binding.btnFinishRun.visibility = View.GONE
         }
     }
 
