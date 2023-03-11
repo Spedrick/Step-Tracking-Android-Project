@@ -35,7 +35,7 @@ object ServiceModule {
         Intent(app, MainActivity::class.java).also {
             it.action = Constants.ACTION_SHOW_TRACKING_FRAGMENT
         },
-        PendingIntent.FLAG_UPDATE_CURRENT
+        PendingIntent.FLAG_IMMUTABLE
     )
 
     @ServiceScoped
