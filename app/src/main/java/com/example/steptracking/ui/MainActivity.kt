@@ -29,7 +29,12 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
 
         val name = sharedPreferences.getString(Constants.KEY_NAME, "")
-        tvToolbarTitle.text = "Let's go ${name.toString()}"
+        if(name != "") {
+            binding.tvToolbarTitle.text = "Let's go, ${name.toString()}!"
+        }
+        else {
+            binding.tvToolbarTitle.text = "Run Tracker"
+        }
 
         navigateToTrackingFragmentIfNeeded(intent)
 
