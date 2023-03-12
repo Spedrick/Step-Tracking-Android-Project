@@ -45,8 +45,8 @@ Preview :
 
 
 ## Authors
-  * [Yuvraj Kumar](https://github.com/Spedrick)
-  * [Jogesh Soni](https://github.com/sonijogesh)
+  * [Yuvraj Kumar](https://github.com/Spedrick) 2021IMG066
+  * [Jogesh Soni](https://github.com/sonijogesh) 2021IMT046
 
 
 ## Mentor
