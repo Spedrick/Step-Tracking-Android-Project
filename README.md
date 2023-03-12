@@ -36,8 +36,8 @@ Run Tracker is app, that helps users to track your run/lap infromation.In additi
   
 Preview :
 
-<img src="https://user-images.githubusercontent.com/95241918/200136633-9c1abd5c-01c8-4520-9466-1e0a0c717910.jpg" width="223" height="480"/> <img src="https://user-images.githubusercontent.com/95241918/200136634-e7bc4fed-60ce-425e-84e9-f24fbb2fbd63.jpg" width="223" height="480"/> 
-<img src="https://user-images.githubusercontent.com/95241918/200136632-4fec4e2c-4ba2-4091-95af-f5be496d476d.jpg" width="223" height="480"/>
+<img src="https://github.com/Spedrick/Step-Tracking-Android-Project/blob/master/Screens/Screenshot_2023-03-12-00-18-44-226_com.example.steptracking.jpg?raw=true" width="223" height="480"/> <img src="https://github.com/Spedrick/Step-Tracking-Android-Project/blob/master/Screens/Screenshot_20230312-103440.png?raw=true" width="223" height="480"/> 
+<img src="https://github.com/Spedrick/Step-Tracking-Android-Project/blob/master/Screens/Screenshot_20230312-103448.png?raw=true" width="223" height="480"/>
 
 ![Alt Text](https://media.giphy.com/media/2osrKQsMRB1W2p0LNX/giphy.gif)
 
