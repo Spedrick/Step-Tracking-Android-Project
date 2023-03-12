@@ -40,7 +40,7 @@ Preview :
 <img src="https://github.com/Spedrick/Step-Tracking-Android-Project/blob/master/Screens/Screenshot_20230312-103448.png?raw=true" width="223" height="480"/>
 
 ![Landscape](https://github.com/Spedrick/Step-Tracking-Android-Project/blob/master/Screens/Screenshot_20230312-103537.png?raw=true)
-<img src="[https://github.com/Spedrick/Step-Tracking-Android-Project/blob/master/Screens/Screenshot_20230312-103448.png?raw=true](https://github.com/Spedrick/Step-Tracking-Android-Project/blob/master/Screens/Screenshot_20230312-103527.png?raw=true)" width="223" height="480"/>
+<img src="https://github.com/Spedrick/Step-Tracking-Android-Project/blob/master/Screens/Screenshot_20230312-103527.png?raw=true" width="223" height="480"/>
 
 
 
