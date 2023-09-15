@@ -8,7 +8,7 @@
 
 ## Description
 
-Run Tracker is app, that helps users to track your run/lap infromation.In addition  We took care of our users to track the calories burned in a particular run. Run tracker is not only an application for run but also our full-functional your on the go fitness trainer.
+Run Tracker is app, that helps users to track your run/lap information.In addition We took care of our users to track the calories burned in a particular run. Run tracker is not only an application for run but also our full-functional your on the go fitness trainer.
 
 
 ### APIs used in the project :
